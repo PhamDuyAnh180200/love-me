@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me?</title>
+    <script type="text/javascript">
+        function yesClick(){
+            alert("A cũm yêu em nhiều lém ạ <3");
+        }
+        function noHover(){
+            var x = Math.round(Math.random() * window.innerHeight);
+            var y = Math.round(Math.random() * window.innerHeight);
+            document.getElementById('btnNo').style.left = x + 'px';
+            document.getElementById('btnNo').style.top = y + 'px';
+        }
+    </script>
+</head>
+<body>
+<h1><img src="IMG_9032.PNG" height="200" width="200"/></h1>
+<p1>Do you love me?</p1>
+<br>
+<input type="button" value="YES" onclick="yesClick()" style="position: absolute">
+<br> <br>
+<input type="button" id="btnNo" value="NO" onmouseover="noHover()" style="position: absolute">
+</body>
+</html>
